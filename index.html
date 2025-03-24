@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="TrajFlow: Multi-modal Motion Prediction via Flow Matching">
+  <meta name="keywords" content="Trajectory Prediction, Motion Prediction, Flow Matching">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrajFlow: Multi-modal Motion Prediction via Flow Matching</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://dsl-lab.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">TrajFlow: Multi-modal Motion Prediction via Flow Matching</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://qiyan98.github.io/">Qi Yan</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a>Brian Zhang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a>Yutong Zhang</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a>Daniel Yang</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a>Joshua White</a><sup>5</sup>,
+            </span>
+            <span class="author-block">
+              <a>Di Chen</a><sup>6</sup>,
+            </span>
+            <span class="author-block">
+              <a>Jiachao Liu</a><sup>7</sup>
+            </span>
+            <span class="author-block">
+              <a>Langechuan Liu</a><sup>8</sup>
+            </span>
+            <span class="author-block">
+              <a>Binnan Zhuang</a><sup>8</sup>
+            </span>
+            <span class="author-block">
+              <a>Shaoshuai Shi</a><sup>9</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://lrjconan.github.io/">Renjie Liao</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of British Columbia,</span>
+            <span class="author-block"><sup>2</sup>University of Waterloo,</span>
+            <span class="author-block"><sup>3</sup>Georgia Institute of Technology,</span>
+            <span class="author-block"><sup>4</sup>Carnegie Mellon University,</span>
+            <span class="author-block"><sup>5</sup>Tesla,</span>
+            <span class="author-block"><sup>6</sup>XPeng Motors,</span>
+            <span class="author-block"><sup>7</sup>Leapmotor,</span>
+            <span class="author-block"><sup>8</sup>Nvidia,</span>
+            <span class="author-block"><sup>9</sup>DiDi</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="columns is-centered">
+  <div class="column">
+    <div class="content has-text-centered">
+      <img src="./static/images/denoiser_cls_score_01_222.png" alt="Denoiser score 222" class="image">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content has-text-centered">
+      <img src="./static/images/denoiser_cls_score_01_364.png" alt="Denoiser score 364" class="image">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content has-text-centered">
+      <img src="./static/images/denoiser_cls_score_01_611.png" alt="Denoiser score 611" class="image">
+    </div>
+  </div>
+</div>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Efficient and accurate motion prediction is crucial for ensuring safety and informed decision-making in
+autonomous driving, particularly under dynamic real-world
+conditions that necessitate multi-modal forecasts. We introduce TrajFlow, a novel flow matching-based motion prediction framework that addresses the scalability and efficiency
+challenges of existing generative trajectory prediction methods.
+Unlike conventional generative approaches that employ i.i.d.
+sampling and require multiple inference passes to capture
+diverse outcomes, TrajFlow predicts multiple plausible future
+trajectories in a single pass, significantly reducing computational overhead while maintaining coherence across predictions.
+Moreover, we propose a ranking loss based on the Plackett-
+Luce distribution to improve uncertainty estimation of predicted trajectories. Additionally, we design a self-conditioning
+training technique that reuses the model’s own predictions to
+construct noisy inputs during a second forward pass, thereby
+improving generalization and accelerating inference. Extensive
+experiments on the large-scale Waymo Open Motion Dataset
+(WOMD) demonstrate that TrajFlow achieves state-of-the-
+art performance across various key metrics, underscoring its
+effectiveness for safety-critical autonomous driving applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="./static/videos/TrajFlow_720p 2.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article {yan2025trajflow,
+  author    = {Yan, Qi and Zhang, Brian and Zhang, Yutong and Yang, Daniel and White, Joshua and Chen, Di and Liu, Jiachao and Liu, Langechuan and Zhuang, Binnan and Shi, Shaoshuai and Liao, Renjie},
+  title     = {TrajFlow: Multi-modal Motion Prediction via Flow Matching},
+  journal   = {arXiv preprint arXiv:},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This page was built using this <a
+              href="https://github.com/nerfies/nerfies.github.io">template</a>. You are free to use it for your own
+            purposes; we just ask that you link back to this page in the footer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
