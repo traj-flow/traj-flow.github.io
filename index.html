@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/favicon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -50,7 +50,7 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu">
+  <!-- <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://dsl-lab.github.io/">
       <span class="icon">
@@ -58,7 +58,7 @@
       </span>
       </a>
     </div>
-  </div>
+  </div> -->
 </nav>
 
 
@@ -116,16 +116,6 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
               <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
@@ -137,7 +127,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://github.com/qiyan98/TrajFlow"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -180,23 +170,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Efficient and accurate motion prediction is crucial for ensuring safety and informed decision-making in
-autonomous driving, particularly under dynamic real-world
-conditions that necessitate multi-modal forecasts. We introduce TrajFlow, a novel flow matching-based motion prediction framework that addresses the scalability and efficiency
-challenges of existing generative trajectory prediction methods.
-Unlike conventional generative approaches that employ i.i.d.
-sampling and require multiple inference passes to capture
-diverse outcomes, TrajFlow predicts multiple plausible future
-trajectories in a single pass, significantly reducing computational overhead while maintaining coherence across predictions.
-Moreover, we propose a ranking loss based on the Plackett-
-Luce distribution to improve uncertainty estimation of predicted trajectories. Additionally, we design a self-conditioning
-training technique that reuses the model’s own predictions to
-construct noisy inputs during a second forward pass, thereby
-improving generalization and accelerating inference. Extensive
-experiments on the large-scale Waymo Open Motion Dataset
-(WOMD) demonstrate that TrajFlow achieves state-of-the-
-art performance across various key metrics, underscoring its
-effectiveness for safety-critical autonomous driving applications.
+            Efficient and accurate motion prediction is crucial for ensuring safety and informed decision-making in autonomous driving, particularly under dynamic real-world conditions that necessitate multi-modal forecasts. We introduce TrajFlow, a novel flow matching-based motion prediction framework that addresses the scalability and efficiency challenges of existing generative trajectory prediction methods. Unlike conventional generative approaches that employ i.i.d. sampling and require multiple inference passes to capture diverse outcomes, TrajFlow predicts multiple plausible future trajectories in a single pass, significantly reducing computational overhead while maintaining coherence across predictions. Moreover, we propose a ranking loss based on the Plackett- Luce distribution to improve uncertainty estimation of predicted trajectories. Additionally, we design a self-conditioning training technique that reuses the model's own predictions to construct noisy inputs during a second forward pass, thereby improving generalization and accelerating inference. Extensive experiments on the large-scale Waymo Open Motion Dataset (WOMD) demonstrate that TrajFlow achieves state-of-the- art performance across various key metrics, underscoring its effectiveness for safety-critical autonomous driving applications. The code and other details are available on the project website <a href="https://traj-flow.github.io/" target="_blank">https://traj-flow.github.io/</a>.
           </p>
         </div>
       </div>
