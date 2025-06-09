@@ -198,6 +198,25 @@
     </div>
     <!--/ Abstract. -->
 
+    <!-- Method. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            <img src="./static/images/overview.svg" width="100%" height="600px" frameborder="0"></img>
+          </p>
+          <p>
+            <strong>Overview of motion prediction via flow matching.</strong>
+            The input scene, including agent history and a road map, is encoded into context tokens via a transformer. During training, noise sampled i.i.d. from a normal distribution is added to the ground truth (GT) trajectory to create a linear interpolation. The denoiser, conditioned on these tokens, predicts denoised trajectories that align with the GT.
+            We use a trajectory regression loss for waypoint prediction, a classification loss for confidence score modeling, and a Plackett-Luce distribution-based ranking loss for uncertainty calibration, in order to encourage realistic and diverse motion predictions.
+            During inference, trajectories are sampled from pure noise at flow time t=0 and refined through ODEs, yielding a plausible future motion distribution.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Method. -->
+
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
