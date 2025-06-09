@@ -143,23 +143,44 @@
   </div>
 </section>
 
-<div class="columns is-centered">
-  <div class="column">
-    <div class="content has-text-centered">
-      <img src="./static/images/cyclist.gif" loading="lazy" onerror="this.onerror=null"  alt="Cyclist prediction example" class="image">
+    <!-- Visualizations -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Visualizations</h2>
+      </div>
     </div>
-  </div>
-  <div class="column">
-    <div class="content has-text-centered">
-      <img src="./static/images/vehicle.gif" loading="lazy" onerror="this.onerror=null"  alt="Vehicle prediction example" class="image">
+
+    <div class="container" style="max-width: 1200px;">
+      <div class="columns is-centered" style="margin: 0 -0.25rem;">
+        <div class="column is-half" style="padding: 0 0.25rem;">
+          <div class="content has-text-centered" style="margin: 0;">
+            <img src="./static/images/vehicle_1.gif" loading="lazy" onerror="this.onerror=null"  alt="Vehicle prediction example" class="image" style="max-width: 100%; margin: 0 auto;">
+            <p class="is-size-6" style="margin-top: 0.5rem;">Vehicle agent</p>
+          </div>
+        </div>
+        <div class="column is-half" style="padding: 0 0.25rem;">
+          <div class="content has-text-centered" style="margin: 0;">
+            <img src="./static/images/vehicle_2.gif" loading="lazy" onerror="this.onerror=null"  alt="Vehicle prediction example" class="image" style="max-width: 100%; margin: 0 auto;">
+            <p class="is-size-6" style="margin-top: 0.5rem;">Vehicle agent</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered" style="margin: 2rem -0.25rem 0 -0.25rem;">
+        <div class="column is-half" style="padding: 0 0.25rem;">
+          <div class="content has-text-centered" style="margin: 0;">
+            <img src="./static/images/cyclist.gif" loading="lazy" onerror="this.onerror=null"  alt="Cyclist prediction example" class="image" style="max-width: 100%; margin: 0 auto;">
+            <p class="is-size-6" style="margin-top: 0.5rem;">Cyclist agent</p>
+          </div>
+        </div>
+        <div class="column is-half" style="padding: 0 0.25rem;">
+          <div class="content has-text-centered" style="margin: 0;">
+            <img src="./static/images/pedestrian.gif" loading="lazy" onerror="this.onerror=null" alt="Pedestrian prediction example" class="image" style="max-width: 100%; margin: 0 auto;">
+            <p class="is-size-6" style="margin-top: 0.5rem;">Pedestrian agent</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="column">
-    <div class="content has-text-centered">
-      <img src="./static/images/pedestrian.gif" loading="lazy" onerror="this.onerror=null" alt="Pedestrian prediction example" class="image">
-    </div>
-  </div>
-</div>
 
 
 <section class="section">
@@ -188,9 +209,119 @@
       </div>
     </div>
     <!--/ Paper video. -->
+
+    <!-- Additional Results -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Additional Qualitative Results</h2>
+        <button class="button is-dark" onclick="toggleAdditionalResults()">Show Additional Results</button>
+      </div>
+    </div>
+
+    <div class="container" style="max-width: 1200px;">
+      <div id="additional-results" style="display: none; margin-top: 2rem;">
+        <!-- Vehicles -->
+        <h3 class="title is-4 has-text-centered" style="margin-bottom: 1rem;">Vehicle Predictions</h3>
+        <!-- Row 1 -->
+        <div class="columns is-centered" style="margin: 0 -0.25rem;">
+          <div class="column is-half" style="padding: 0 0.25rem;">
+            <div class="content has-text-centered" style="margin: 0;">
+              <img src="./static/images/more_results/id_134b5aa792a456ec_TYPE_VEHICLE_03.gif" loading="lazy" onerror="this.onerror=null" alt="Additional vehicle prediction" class="image" style="max-width: 100%; margin: 0 auto;">
+              <p class="is-size-6" style="margin-top: 0.5rem;">Vehicle agent</p>
+            </div>
+          </div>
+          <div class="column is-half" style="padding: 0 0.25rem;">
+            <div class="content has-text-centered" style="margin: 0;">
+              <img src="./static/images/more_results/id_125635eaf838cbf4_TYPE_VEHICLE_03.gif" loading="lazy" onerror="this.onerror=null" alt="Additional vehicle prediction" class="image" style="max-width: 100%; margin: 0 auto;">
+              <p class="is-size-6" style="margin-top: 0.5rem;">Vehicle agent</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="columns is-centered" style="margin: 2rem -0.25rem 0 -0.25rem;">
+          <div class="column is-half" style="padding: 0 0.25rem;">
+            <div class="content has-text-centered" style="margin: 0;">
+              <img src="./static/images/more_results/id_11b1f787fb6fe7f9_TYPE_VEHICLE_01.gif" loading="lazy" onerror="this.onerror=null" alt="Additional vehicle prediction" class="image" style="max-width: 100%; margin: 0 auto;">
+              <p class="is-size-6" style="margin-top: 0.5rem;">Vehicle agent</p>
+            </div>
+          </div>
+          <div class="column is-half" style="padding: 0 0.25rem;">
+            <div class="content has-text-centered" style="margin: 0;">
+              <img src="./static/images/more_results/id_110f84cd12b421a9_TYPE_VEHICLE_04.gif" loading="lazy" onerror="this.onerror=null" alt="Additional vehicle prediction" class="image" style="max-width: 100%; margin: 0 auto;">
+              <p class="is-size-6" style="margin-top: 0.5rem;">Vehicle agent</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="columns is-centered" style="margin: 2rem -0.25rem 0 -0.25rem;">
+          <div class="column is-half" style="padding: 0 0.25rem;">
+            <div class="content has-text-centered" style="margin: 0;">
+              <img src="./static/images/more_results/id_10df9646a81a1087_TYPE_VEHICLE_01.gif" loading="lazy" onerror="this.onerror=null" alt="Additional vehicle prediction" class="image" style="max-width: 100%; margin: 0 auto;">
+              <p class="is-size-6" style="margin-top: 0.5rem;">Vehicle agent</p>
+            </div>
+          </div>
+          <div class="column is-half" style="padding: 0 0.25rem;">
+            <div class="content has-text-centered" style="margin: 0;">
+              <img src="./static/images/more_results/id_10b15ae62cf6a249_TYPE_VEHICLE_01.gif" loading="lazy" onerror="this.onerror=null" alt="Additional vehicle prediction" class="image" style="max-width: 100%; margin: 0 auto;">
+              <p class="is-size-6" style="margin-top: 0.5rem;">Vehicle agent</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pedestrians -->
+        <h3 class="title is-4 has-text-centered" style="margin: 3rem 0 1rem 0;">Pedestrian/Cyclist Predictions</h3>
+        <!-- Row 4 -->
+        <div class="columns is-centered" style="margin: 0 -0.25rem;">
+          <div class="column is-half" style="padding: 0 0.25rem;">
+            <div class="content has-text-centered" style="margin: 0;">
+              <img src="./static/images/more_results/id_130e2b5cc3991379_TYPE_PEDESTRIAN_01.gif" loading="lazy" onerror="this.onerror=null" alt="Additional pedestrian prediction" class="image" style="max-width: 100%; margin: 0 auto;">
+              <p class="is-size-6" style="margin-top: 0.5rem;">Pedestrian agent</p>
+            </div>
+          </div>
+          <div class="column is-half" style="padding: 0 0.25rem;">
+            <div class="content has-text-centered" style="margin: 0;">
+              <img src="./static/images/more_results/id_12d5ce1b476aa6d4_TYPE_PEDESTRIAN_01.gif" loading="lazy" onerror="this.onerror=null" alt="Additional pedestrian prediction" class="image" style="max-width: 100%; margin: 0 auto;">
+              <p class="is-size-6" style="margin-top: 0.5rem;">Pedestrian agent</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="columns is-centered" style="margin: 2rem -0.25rem 0 -0.25rem;">
+          <div class="column is-half" style="padding: 0 0.25rem;">
+            <div class="content has-text-centered" style="margin: 0;">
+              <img src="./static/images/more_results/id_10c3b27f9593de61_TYPE_PEDESTRIAN_01.gif" loading="lazy" onerror="this.onerror=null" alt="Additional pedestrian prediction" class="image" style="max-width: 100%; margin: 0 auto;">
+              <p class="is-size-6" style="margin-top: 0.5rem;">Pedestrian agent</p>
+            </div>
+          </div>
+          <div class="column is-half" style="padding: 0 0.25rem;">
+            <div class="content has-text-centered" style="margin: 0;">
+              <img src="./static/images/more_results/id_10040e572b831a04_TYPE_CYCLIST_01.gif" loading="lazy" onerror="this.onerror=null" alt="Additional cyclist prediction" class="image" style="max-width: 100%; margin: 0 auto;">
+              <p class="is-size-6" style="margin-top: 0.5rem;">Cyclist agent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Additional Results -->
   </div>
 </section>
 
+<script>
+function toggleAdditionalResults() {
+  const resultsDiv = document.getElementById('additional-results');
+  const button = event.target;
+  if (resultsDiv.style.display === 'none') {
+    resultsDiv.style.display = 'block';
+    button.textContent = 'Hide Additional Results';
+  } else {
+    resultsDiv.style.display = 'none';
+    button.textContent = 'Show Additional Results';
+  }
+}
+</script>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
