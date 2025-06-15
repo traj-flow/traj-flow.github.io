@@ -4,11 +4,11 @@ This is the repository that contains source code for the [TrajFlow website]().
 
 If you find TrajFlow useful for your work please cite:
 ```
-@article {yan2025trajflow,
-  author    = {Yan, Qi and Zhang, Brian and Zhang, Yutong and Yang, Daniel and White, Joshua and Chen, Di and Liu, Jiachao and Liu, Langechuan and Zhuang, Binnan and Shi, Shaoshuai and Liao, Renjie},
-  title     = {TrajFlow: Multi-modal Motion Prediction via Flow Matching},
-  journal   = {arXiv preprint arXiv:2506.08541},
-  year      = {2025},
+@article{yan2025trajflow,
+  title={TrajFlow: Multi-modal Motion Prediction via Flow Matching},
+  author={Yan, Qi and Zhang, Brian and Zhang, Yutong and Yang, Daniel and White, Joshua and Chen, Di and Liu, Jiachao and Liu, Langechuan and Zhuang, Binnan and Shi, Shaoshuai and others},
+  journal={arXiv preprint arXiv:2506.08541},
+  year={2025}
 }
 ```
 
